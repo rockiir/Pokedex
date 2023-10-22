@@ -1,0 +1,111 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display:700,700i|Oswald:400&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playfair+Display:wght@700&display=swap');
+
+
+
+
+:root {
+	--primary-font: 'Noto Sans', sans-serif;
+	--display-font: 'Oswald', sans-serif;
+	--display-font-bold: 'Oswald', sans-serif; 
+	--accent-font: 'Playfair Display', serif;
+	
+	--black: #555;
+	--grey: #dedede;
+	--grey-tint: #eee;
+	--white: #fff;
+
+	--primary-color: #999;
+	--primary-color-rgb: 158, 158, 158;
+	--secondary-color: #ccc;
+	--secondary-color-rgb: 85, 85, 85;
+	
+	--dark-color: #483a32;
+	--electric-color: #f7c753;
+	--fairy-color: #dd98e8;
+	--fire-color: #ba5400;
+	--grass-color: #7bce52;
+	--ice-color: #79cce4;
+	--normal-color: #666;
+	--psychic-color: #ee7ca4;
+	--water-color: #549cf8;
+	--accent-color: ##fff1ac;
+	
+	--header-offset: 4rem;
+	--skew-deg: -5deg;
+	--pad-main: 1.5rem;
+	--border-radius: 2.25rem;
+	--border-width: 3px;
+}
+
+.eevee {
+	--primary-color: #ba5400;
+	--primary-color-rgb: 187, 84, 0;
+	--secondary-color: #fff1ac;
+	--secondary-color-rgb: 255, 241, 172;
+	--accent-color: #ba5400;
+}
+
+.vaporeon {
+	--primary-color: #5dc1cf;
+	--primary-color-rgb: 93, 193, 207;
+	--secondary-color: #fff8b0;
+	--secondary-color-rgb: 255, 248, 176;
+	--accent-color: #00568a;
+}
+
+.jolteon {
+	--primary-color: #fccf00;
+	--primary-color-rgb: 252, 207, 0;
+	--secondary-color: #dbdcdc;
+	--secondary-color-rgb: 219, 220, 220;
+	--accent-color: #fccf00;
+}
+
+.flareon {
+	--primary-color: #e95520;
+	--primary-color-rgb: 233, 85, 32;
+	--secondary-color: #faed00;
+	--secondary-color-rgb: 250, 237, 0;
+	--accent-color: #e95520;
+}
+
+.espeon {
+	--primary-color: #d0bad9;
+	--primary-color-rgb: 208, 186, 217;
+	--secondary-color: #4b5170;
+	--secondary-color-rgb: 75, 81, 112;
+	--accent-color: #e40050;
+}
+
+.umbreon {
+	--primary-color: #485157;
+	--primary-color-rgb: 72, 81, 87;
+	--secondary-color: #ffe100;
+	--secondary-color-rgb: 255, 255, 0;
+	--accent-color: #e95550;
+}
+
+.leafeon {
+	--primary-color: #39b382;
+	--primary-color-rgb: 57, 179, 130;
+	--secondary-color: #fff1ac;
+	--secondary-color-rgb: 255, 241, 172;
+	--accent-color: #a36102;
+}
+
+.glaceon {
+	--primary-color: #007a95;
+	--primary-color-rgb: 0, 122, 149;
+	--secondary-color: #d2ecfa;
+	--secondary-color-rgb: 210, 236, 250;
+	--accent-color: #00b8ee;
+}
+
+.sylveon {
+	--primary-color: #f19db4;
+	--primary-color-rgb: 241, 157, 180;
+	--secondary-color: #7dcef4;
+	--secondary-color-rgb: 125, 206, 244;
+	--accent-color: #4f86c5;
+}

@@ -1,0 +1,114 @@
+@import '../config/colors';
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 10;
+  background-color: var(--electric-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--secondaryColor);
+}
+
+.menu-button {
+  display: none;
+}
+
+/* Estilo para o menu quando está visível */
+nav.show {
+  display: block;
+}
+
+/* Estilos da navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%; /* Aqui você define a largura da navbar como 100% da tela */
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.header-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo para o botão de menu em dispositivos menores */
+@media screen and (max-width: 768px) {
+  .main-content {
+    margin-top: 60px;
+  }
+
+  .menu-button {
+    width: 100%;
+    background-color: var(--primaryColor);
+    position: fixed;
+    top: 0;
+    display: block;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  nav.show {
+    display: block !important;
+    background-color: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.show ul {
+    display: block;
+    margin-top: 60px;
+  }
+
+  nav.show li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav.show a {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+  }
+}

@@ -1,0 +1,155 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display:700,700i|Oswald:400&display=swap';
+@import "../config/colors.css";
+
+
+
+.home {
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+}
+
+.barra-de-pesquisa {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  position: relative;
+
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.sugestoes-dropdown {
+  position: absolute; /* Torna a posição absoluta para que o dropdown se sobreponha */
+  top: 100%; /* Posiciona o dropdown abaixo da barra de pesquisa */
+  left: auto; /* Alinha o dropdown com o início da barra de pesquisa */
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1;
+  overflow-y: hidden;
+
+
+
+}
+.barra-de-pesquisa input[type="text"]:focus + .sugestoes-dropdown {
+  display: block;
+}
+
+.selected-option {
+  padding: 15px;
+  
+}
+.card {
+  background-color: var(white);
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.2);
+  width: 500px; /* Largura fixa do card */
+  height: 40%; /* Aumenta a altura do card */
+  margin: 10% auto; /* Centraliza verticalmente e centraliza horizontalmente */
+  position: relative; /* Adicione essa linha */
+
+}
+
+.imagem-pokemon {
+  flex: 1;
+  padding: var(--pad-main);
+  text-align: center;
+  margin-top: -20%; /* Aumente o valor do margin-top */
+  z-index: 2; /* Garante que o nome fique sobre o círculo */
+  width: 505px;
+  height: 450px;
+
+}
+
+.imagem-pokemon img {
+  max-width: 100%; /* Defina a largura máxima como 100% */
+  height: 500px;
+  width: 100%; /* Defina a largura como 100% para garantir um tamanho fixo */
+  filter: drop-shadow(10px 15px 4px #00000059);
+  z-index: 1;
+}
+
+.informacoes-do-pokemon {
+  flex: 1;
+  padding: var(--pad-main);
+  text-align: center;
+  font-family: var(--primary-font);
+  height: 60%; /* Aumenta a altura da área de informações */
+margin-top: 10%;
+z-index: 1;
+
+}
+
+.tipo {
+  background-color: var(--secondary-color);
+  padding: 5px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.nome {
+  color: var(--fire-color);
+  font-family: var(--display-font-bold);
+  font-weight: 700; 
+  font-size: 500%;
+  margin-top: -10%; /* Aumente o valor negativo aqui */
+  z-index: 3; /* Defina um valor maior do que o círculo */
+  margin-bottom: 20%;
+ 
+
+}
+
+.imagem-pokemon-rodape {
+  flex: 1;
+  padding: var(--pad-main);
+  text-align: center;
+  margin-top: -8%;
+  margin-left: 70%;
+  position: absolute; /* Adicione essa linha */
+  z-index: 2; /* Valor maior para sobrepor o Pokémon */
+}
+
+.imagem-pokemon-rodape img {
+  max-width: 250%;
+  height: auto;
+  width: 200%;
+  
+}
+
+.circulo-container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+.circulo-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: var(--border-radius);
+
+
+}
+
