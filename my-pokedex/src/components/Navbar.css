@@ -66,13 +66,12 @@ nav.show {
 
 /* Estilo para o botão de menu em dispositivos menores */
 @media screen and (max-width: 768px) {
-  .main-content {
-    margin-top: 60px;
-  }
+
+
 
   .menu-button {
     width: 100%;
-    background-color: var(--primaryColor);
+    background-color: var(--electric-color);
     position: fixed;
     top: 0;
     display: block;
@@ -80,16 +79,22 @@ nav.show {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    width: 100%;
+
+
   }
 
   nav.show {
     display: block !important;
-    background-color: var(--primaryColor);
+    background-color: var(--electric-Color);
     position: absolute;
     left: 0;
     right: 0;
     z-index: 1;
     top: 0;
+    width: 100%;
+
+
   }
 
   nav ul {

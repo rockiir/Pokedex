@@ -152,4 +152,14 @@ p {
 
 
 }
+@media screen and (max-width: 768px) {
+  .home {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 80%;
+    height: auto;
+  
+  }
+  
+}
 

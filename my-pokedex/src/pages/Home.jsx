@@ -252,6 +252,7 @@ function Home() {
           </select>
         )}
       </div >
+      
       <div className="plano-de-fundo-cor">
         <div className="card">
           <svg className="circulo-svg" width="500" height="350">
