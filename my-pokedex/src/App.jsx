@@ -10,7 +10,7 @@ function App() {
         <Navbar />
         <div className="App">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Pokedex" element={<Home />} />
           </Routes>
         </div>
       </Router>
