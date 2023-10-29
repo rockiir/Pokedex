@@ -1,0 +1,64 @@
+.pokemon-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pokemon-imagem {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .nome {
+    font-weight: bold;
+  }
+  
+  .tipo {
+    background-color: #a040a0;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .nomeCard{
+    font-size: 30px;
+    font-family:var(--display-font) ;
+  }
+  .listaCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start; 
+    justify-content: space-between; 
+  }
+  .pokemon-card {
+    flex: calc(25% - 20px);
+    border: 1px solid #a040a0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+    position: relative;
+
+  }
+  .pokemon-image {
+    width: 100px; 
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 2; 
+
+  }
+  
+   
+  .tipo-background {
+    position: absolute;
+    z-index: 0;
+  }
+  

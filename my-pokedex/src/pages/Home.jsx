@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PokemonCard from '../components/PokemonCard'; // Certifique-se de importar o componente PokemonCard aqui
 import interrogationImage from '../assets/interrogation.png';
-import SearchBar from '../components/SearchBar';
+import ListPokemon from '../components/ListPokemon';
 import './Home.css'
 
 function Home() {
@@ -56,8 +56,6 @@ function Home() {
     }
   }
 
-  // Resto do seu código para obter informações do Pokémon...
-
   return (
     <div className="home">
       <PokemonCard
@@ -74,6 +72,7 @@ function Home() {
         dadosCarregadosRodape={dadosCarregadosRodape}
         interrogationImage={interrogationImage}
       />
+      <ListPokemon />
     </div>
   );
 }
